@@ -2,9 +2,9 @@ pipeline {
        agent any
             stages{
                  stage('Build-Deploy-Service'){
-		when {
-                	anyOf{
-                    		branch "develop"; branch "main";
+			when {
+                		anyOf{
+                    			branch "develop"; branch "main";
                			 }	
            		 }
                               steps{
