@@ -4,7 +4,7 @@ pipeline {
                  stage('Build-Deploy-Service'){
 		when {
                 	anyOf{
-                    		branch "1111develop"; branch "11111main";
+                    		branch "develop"; branch "main";
                			 }	
            		 }
                               steps{
